@@ -7,6 +7,8 @@ const ExpenseForm = () => {
     setEnteredTitle(event.target.value);
   };
 
+  const amountChangeHandler = (event) => {};
+
   return (
     <form>
       <div className="new-expense__controls">
@@ -16,7 +18,12 @@ const ExpenseForm = () => {
         </div>
         <div className="new-expense__control">
           <label>Amount</label>
-          <input type="number" step="0.01" min="0.01" />
+          <input
+            type="number"
+            step="0.01"
+            min="0.01"
+            onChange={amountChangeHandler}
+          />
         </div>
         <div className="new-expense__control">
           <label>Date</label>
