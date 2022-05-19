@@ -28,6 +28,7 @@ const ExpenseForm = (props) => {
     };
     // console.log(expenseData);
 
+    // lifting data from child to parent
     props.onSaveExpenseData(expenseData);
 
     // clearing the user inputs using two-way binding
