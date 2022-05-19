@@ -1,6 +1,7 @@
+import "./ExpenseItems.css";
 function ExpenseItem() {
   return (
-    <div>
+    <div >
       <div>March 28th 2022</div>
       <div>
         <h2>Car Insuarance</h2>
