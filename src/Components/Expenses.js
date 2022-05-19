@@ -1,3 +1,4 @@
+import ExpenseItem from "./ExpenseItems";
 const Expenses = () => {
   return (
     <div>
