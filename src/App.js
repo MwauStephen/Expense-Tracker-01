@@ -1,4 +1,4 @@
-import ExpenseItem from "./Components/ExpenseItems";
+import Expenses from "./Components/Expenses";
 function App() {
   const expenses = [
     {
@@ -24,7 +24,6 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      
     </div>
   );
 }
