@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItems";
-const Expenses = () => {
+const Expenses = (props) => {
   return (
     <div>
       <ExpenseItem
