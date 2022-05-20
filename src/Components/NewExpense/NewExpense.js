@@ -13,6 +13,9 @@ const NewExpense = (props) => {
     // lifiting state up
     props.onAddExpense(expenseData);
     // console.log(expenseData);
+
+    // close the expense form on submission
+    setShowExpenseForm(false);
   };
 
   const showFormHandler = () => {

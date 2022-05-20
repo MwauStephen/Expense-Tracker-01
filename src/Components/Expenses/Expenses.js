@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ExpenseItem from "./ExpenseItem";
+import ExpensesList from "./ExpensesList";
 import Card from "../UI/Card.js";
 import "./Expenses.css";
 import ExpensesFilter from "./ExpensesFilter";
@@ -14,17 +14,13 @@ const Expenses = (props) => {
   const filteredYearExpense = props.items.filter((expense) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
-
-  // conditional content
-
-  }
   return (
     <Card className="expenses">
       <ExpensesFilter
         onChangeFilter={filterChangeHandler}
         selected={filteredYear}
       />
-      {expenseContent}
+      <ExpensesList items={filteredYearExpense} />
     </Card>
   );
 };
