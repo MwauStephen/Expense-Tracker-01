@@ -16,18 +16,7 @@ const Expenses = (props) => {
   });
 
   // conditional content
-  let expenseContent = <p>No expenses found</p>;
-  if (filteredYearExpense > 0) {
-    return (expenseContent = filteredYearExpense.map((expense) => {
-      return (
-        <ExpenseItem
-          key={expense.id}
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-        />
-      );
-    }));
+
   }
   return (
     <Card className="expenses">
