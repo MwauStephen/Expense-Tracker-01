@@ -19,13 +19,17 @@ const NewExpense = (props) => {
     setShowExpenseForm(true);
   };
 
+  const hideFormHandler = () => {
+    setShowExpenseForm(false);
+  };
+
   return (
     <div className="new-expense">
       {!showExpenseForm && (
         <button onClick={showFormHandler}>Add new expense</button>
       )}
       {showExpenseForm && (
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler}  />
       )}
     </div>
   );
